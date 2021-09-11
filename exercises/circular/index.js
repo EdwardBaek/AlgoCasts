@@ -12,6 +12,9 @@
 //   c.next = b;
 //   circular(l) // true
 
-function circular(list) {}
+function circular(list) {
+  console.log( list.next );
+
+}
 
 module.exports = circular;

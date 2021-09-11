@@ -1,0 +1,23 @@
+{
+  "name": "algocasts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^27.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenGrider/AlgoCasts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephenGrider/AlgoCasts/issues"
+  },
+  "homepage": "https://github.com/StephenGrider/AlgoCasts#readme"
+}
