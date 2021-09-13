@@ -7,8 +7,16 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
+// Self Answer 1
+function selfCapitalize1(str) {
+  const separator = ' ' ;
+  return str.split(separator).map(word => {
+    return word[0].toUpperCase() + word.slice(1);
+  }).join(separator);
+}
+
 function capitalize(str) {
   return str.split(' ').map( v => v[0] = v[0].toUpperCase());
 }
 
-module.exports = capitalize;
+module.exports = selfCapitalize1;

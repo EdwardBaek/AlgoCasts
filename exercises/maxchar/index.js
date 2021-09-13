@@ -5,6 +5,33 @@
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 
+// Self Answer 1
+function selfMaxChar1 (str) {
+  const getCharMap = (str) => {
+    let charMap = {};
+    str.split('').map(char => {
+      if(!charMap[char] ) {
+        charMap[char] = 0;
+      }
+      charMap[char] += 1;
+    });
+    return charMap;
+  }
+  const getMaxChar = (charMap) => {
+    let maxChar = undefined;
+    let maxCharCnt = 0;
+    Object.keys(charMap).map(key => {
+      if(charMap[key] > maxCharCnt) {
+        maxChar = key;
+        maxCharCnt = charMap[key];
+      }
+    });
+    return maxChar;
+  }
+  const charMap = getCharMap(str);
+  return getMaxChar(charMap);
+}
+
 function maxChar(str) {
   let charMap = {};
   let maxChar = '';
@@ -27,6 +54,7 @@ function maxChar(str) {
 
   return maxChar;
 }
+
 // function maxChar(str) {
 //   const strArray = str.split('');
 //   const uniqObj = {};
@@ -48,4 +76,4 @@ function maxChar(str) {
 //   return maxChar;
 // }
 
-module.exports = maxChar;
+module.exports = selfMaxChar1;

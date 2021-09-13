@@ -8,6 +8,46 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
+// Self Answer 1
+function selfChunk1 (array, size) {
+  let chunk = [];
+  let tempArray = [];
+  array.map(value => {
+    if(tempArray.length == size) {
+      chunk.push(tempArray);
+      tempArray = [];
+    }
+    tempArray.push(value);
+  });
+  
+  if(tempArray.length > 0) {
+    chunk.push(tempArray);
+  }
+  
+  return chunk;
+}
+
+// Self Answer 2
+function selfChunk2 (array, size) {
+  let chunk = [];
+  const tempArray = [...array];
+  while (tempArray.length > 0) {
+    chunk.push(tempArray.splice(0, size));
+  }
+  return chunk;
+}
+
+// Self Answer 3
+function selfChunk3 (array, size, chunk=[], remain=array) {
+  if(remain.length > size) {
+    chunk.push(remain.splice(0, size));
+    return selfChunk3(array, size, chunk, remain);
+  }else{
+    chunk.push(remain);
+    return chunk;
+  }
+}
+
 function chunk(array, size) {
   let chunk = [];
   let tempArray = [...array];
@@ -17,4 +57,4 @@ function chunk(array, size) {
   return chunk;
 }
 
-module.exports = chunk;
+module.exports = selfChunk3;

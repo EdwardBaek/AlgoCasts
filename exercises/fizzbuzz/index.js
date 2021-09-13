@@ -12,6 +12,81 @@
 //   4
 //   buzz
 
+// Self Answer 1
+function selfFizzBuzz1 (n) {
+  const isFizz = (n) => {
+    return (n % 3 == 0 );
+  }
+  const isBuzz = (n) => {
+    return (n % 5 == 0 );
+  }
+  let result = '';
+  for( let i=1; i <= n; ++i ) {
+    if(isFizz(i) && isBuzz(i)) {
+      result = 'fizzbuzz';
+    }else if(isFizz(i)) {
+      result = 'fizz';
+    }else if(isBuzz(i)) {
+      result = 'buzz';
+    }else{
+      result = i;
+    }
+    console.log(result);
+  }
+}
+
+// Self Answer2
+function selfFizzBuzz2 (n) {
+  const isFizz = (n) => {
+    return (n % 3 == 0 );
+  }
+  const isBuzz = (n) => {
+    return (n % 5 == 0 );
+  }
+  const printConsole = (i) => {
+    if(isFizz(i) && isBuzz(i)) {
+      result = 'fizzbuzz';
+    }else if(isFizz(i)) {
+      result = 'fizz';
+    }else if(isBuzz(i)) {
+      result = 'buzz';
+    }else{
+      result = i;
+    }
+    console.log(result);
+  }
+  Array.from({length: n}, (_, i) => i + 1).map(i => {
+    printConsole(i);
+  });
+}
+
+// Self Answer3
+function selfFizzBuzz3 (n, i=1) {
+  if(i > n) {
+    return;
+  }
+  const isFizz = (n) => {
+    return (n % 3 == 0 );
+  }
+  const isBuzz = (n) => {
+    return (n % 5 == 0 );
+  }
+  const printConsole = (i) => {
+    if(isFizz(i) && isBuzz(i)) {
+      result = 'fizzbuzz';
+    }else if(isFizz(i)) {
+      result = 'fizz';
+    }else if(isBuzz(i)) {
+      result = 'buzz';
+    }else{
+      result = i;
+    }
+    console.log(result);
+  }
+  printConsole(i)
+  selfFizzBuzz3(n, i+1);
+}
+
 function fizzBuzz(n) {
   for( let i = 1; i <= n; ++i ) {
     let result;
@@ -28,4 +103,4 @@ function fizzBuzz(n) {
   }
 }
 
-module.exports = fizzBuzz;
+module.exports = selfFizzBuzz3;

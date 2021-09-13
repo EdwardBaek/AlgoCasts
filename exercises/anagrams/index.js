@@ -8,6 +8,19 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
+// Self Answer 1
+function selfAnagrams1 (stringA, stringB) {
+  const refineData = (str) => {
+    return str.toLowerCase().match(/[a-z]/ig).sort().join('');
+  }
+  return (refineData(stringA) == refineData(stringB));
+}
+
+// Self Answer 2
+function selfAnagrams2 (stringA, stringB) {
+  
+}
+
 function anagrams(stringA, stringB) {
   const reform = (string) =>string.toLowerCase().match(/[a-z]/gi)
     .sort().join('');
@@ -16,4 +29,4 @@ function anagrams(stringA, stringB) {
   return arrayA === arrayB;
 }
 
-module.exports = anagrams;
+module.exports = selfAnagrams2;
