@@ -9,13 +9,13 @@
 5. [X] The classic FizzBuzz!
 6. [X] Array Chunking
 7. [X] Anagrams
-8. [ ] Sentence Capitalization
-9. [ ] Printing Steps
-10. [ ] Two Sided Steps - Pyramids
-11. [ ] Find The Vowels
-12. [ ] Enter the Matrix Spiral
-13. [ ] Fibonacci
-14. [ ] The Queue
+8. [X] Sentence Capitalization
+9. [X] Printing Steps
+10. [x] Two Sided Steps - Pyramids
+11. [x] Find The Vowels
+12. [x] Enter the Matrix Spiral
+13. [x] Fibonacci
+14. [x] The Queue
 15. [ ] Stack 'Em Up with Stacks
 16. [ ] Two Become One
 17. [ ] Linked Lists
