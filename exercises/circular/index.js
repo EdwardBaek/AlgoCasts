@@ -12,9 +12,20 @@
 //   c.next = b;
 //   circular(l) // true
 
-function circular(list) {
-  console.log( list.next );
+function sefl_circular1(list) {
+  let listArray = new Set();
+  let counter = 0;
+  for(let node of list) {
+    listArray.add(node);
+    counter++;
+    if(counter !== listArray.size) {
+      return true;
+    }
+  }
+  return false;
+}
 
+function circular(list) {
 }
 
 module.exports = circular;

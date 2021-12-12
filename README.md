@@ -16,9 +16,9 @@
 12. [x] Enter the Matrix Spiral
 13. [x] Fibonacci
 14. [x] The Queue
-15. [ ] Stack 'Em Up with Stacks
-16. [ ] Two Become One
-17. [ ] Linked Lists
+15. [x] Stack 'Em Up with Stacks
+16. [x] Two Become One
+17. [x] Linked Lists
 18. [ ] Find the Midpoint
 19. [ ] Circular Lists
 20. [ ] Step Back From the Tail
