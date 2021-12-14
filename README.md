@@ -19,9 +19,9 @@
 15. [x] Stack 'Em Up with Stacks
 16. [x] Two Become One
 17. [x] Linked Lists
-18. [ ] Find the Midpoint
-19. [ ] Circular Lists
-20. [ ] Step Back From the Tail
+18. [x] Find the Midpoint
+19. [x] Circular Lists
+20. [x] Step Back From the Tail
 21. [ ] Tree
 22. [ ] Tree Width with Level Width
 23. [ ] Binary Search Trees
